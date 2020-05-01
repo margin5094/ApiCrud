@@ -1,0 +1,41 @@
+<font color="black">ENTER INDIAN RUPEES<input type="number" name="value" [(ngModel)]="value">
+<br><br>
+<tr>
+    <td>
+        AMERICAN DOLLAR:&nbsp;
+    </td>
+    <td>
+            {{(value/76|currency:'USD')}}
+    </td>
+</tr>
+<br>
+<tr>
+    <td>
+        CANADIAN DOLLAR:&nbsp;
+    <td>
+        {{(value/54|currency:'CAD')}}
+    </td>
+</tr>
+<br>
+<tr>
+    <td>
+        AUSTRALIAN DOLLAR: &nbsp;
+    </td>
+    <td>
+        {{(value/48|currency:'AUS')}}   
+    </td>
+</tr>
+<br>
+<tr>
+    <td>
+        AUSTRALIAN DOLLAR: &nbsp;
+    </td>
+    <td>
+        {{(value/10|currency:'CNY')}}   
+    </td>
+</tr>
+<tr>
+    <td>
+    </td>
+</tr>
+</font>
